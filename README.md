@@ -2,11 +2,20 @@
 
 ## Overview
 
-Bikesharing user data provided by Citi Group for the city of New York vizualized using Tableau Stories and use the analysis for possible implementations in other cities (such as Des Moines). 
+Tableau Stories published using Bikeshare user data for the month of August 2009, provided by Citi Group for the city of New York. 
 
 [Link to Dashboard](https://public.tableau.com/views/CitiBikeChallenge_16435815931090/NYCCitiBike?:language=en-US&:display_count=n&:origin=viz_share_link)
 
-Tableau worksheets include:
+Jupyter Notebook and pandas was used for converting the "Tripduration" column into datetime format.
+
+```python
+#  Convert the 'tripduration' column to datetime datatype.
+
+df['tripduration'] = pd.to_datetime(df['tripduration'], unit= 's')
+
+```
+
+Analysis for possible implementations in other cities (such as Des Moines) includes:
 
 - A line graph displaying the number of bikes checked out by duration for all users, and the graph can be filtered by the hour
 - A line graph displaying the number of bikes that are checked out by duration for each gender by the hour, and the graph can be filtered by the hour and gender
@@ -18,11 +27,11 @@ Tableau worksheets include:
 
 ### Resources
 
-[Tableau Desktop Public Edition v. 2021.4.3](https://www.tableau.com/support?build=20214.22.0108.1039&edition=public&lang=en-us&platform=windows&version=2021.4)
-[CitiBike data provided by Citi for the month of August, 2009](https://ride.citibikenyc.com/system-data)
-[Python 3.7.10](https://docs.python.org/3.7/)
-[Anaconda 4.10.1](https://docs.conda.io/projects/conda/en/latest/glossary.html#conda-environment)
-[Jupyter Notebook 6.3.0](https://jupyter-notebook.readthedocs.io/en/stable/index.html)
+- [Tableau Desktop Public Edition v. 2021.4.3](https://www.tableau.com/support?build=20214.22.0108.1039&edition=public&lang=en-us&platform=windows&version=2021.4)
+- [CitiBike data provided by Citi for the month of August, 2009](https://ride.citibikenyc.com/system-data)
+- [Python 3.7.10](https://docs.python.org/3.7/)
+- [Anaconda 4.10.1](https://docs.conda.io/projects/conda/en/latest/glossary.html#conda-environment)
+- [Jupyter Notebook 6.3.0](https://jupyter-notebook.readthedocs.io/en/stable/index.html)
 
 ## Results
 
