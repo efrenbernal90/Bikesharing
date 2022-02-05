@@ -4,6 +4,8 @@
 
 Bikesharing user data provided by Citi Group for the city of New York vizualized using Tableau Stories and use the analysis for possible implementations in other cities (such as Des Moines). 
 
+[Link to Dashboard](https://public.tableau.com/views/CitiBikeChallenge_16435815931090/NYCCitiBike?:language=en-US&:display_count=n&:origin=viz_share_link)
+
 Tableau worksheets include:
 
 - A line graph displaying the number of bikes checked out by duration for all users, and the graph can be filtered by the hour
